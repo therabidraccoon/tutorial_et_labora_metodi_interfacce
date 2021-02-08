@@ -2,7 +2,6 @@ package it.etlabora.testjava.utils;
 
 import it.etlabora.testjava.figure.IFigura;
 import it.etlabora.testjava.figure.impl.Quadrato;
-import it.etlabora.testjava.figure.impl.Triangolo;
 
 public class FigureFormatter {
 
@@ -11,15 +10,23 @@ public class FigureFormatter {
 //	}
 
 	
-//	public static void descriviPerimetroFigura(Quadrato q) {
-//		System.out.println("Il perimetro della figura con lato lungo: " + q.getLunghezzaLato() + " è :" + q.calcolaPerimetro());
+//	public static void descriviPerimetroFigura(Quadrato figura) {
+//		System.out.println("Il perimetro della figura è :" + figura.calcolaPerimetro());
 //	}
 //	
-//	public static void descriviPerimetroFigura(Triangolo q) {
-//		System.out.println("Il perimetro della figura con lato lungo: " + q.getLunghezzaLato() + " è :" + q.calcolaPerimetro());
+//	public static void descriviPerimetroFigura(TriangoloEquilatero figura) {
+//		System.out.println("Il perimetro della figura è :" + figura.calcolaPerimetro());
+//	}
+//	
+//	public static void descriviPerimetroFigura(Cerchio figura) {
+//		System.out.println("Il perimetro della figura è :" + figura.calcolaPerimetro());
 //	}
 	
 	public static void descriviPerimetroFigura(IFigura figura) {
-		System.out.println("Il perimetro della figura con lato lungo: " + figura.getLunghezzaLato() + " è :" + figura.calcolaPerimetro());
+		System.out.println("Il perimetro della figura è :" + figura.calcolaPerimetro());
+	}
+	
+	public static void descriviAreaFigura(Quadrato figura) {
+		System.out.println("L'area della figura è :" + figura.calcolaArea());
 	}
 }

@@ -2,7 +2,7 @@ package it.etlabora.testjava.figure.impl;
 
 import it.etlabora.testjava.figure.IFigura;
 
-public class Triangolo implements IFigura {
+public class TriangoloEquilatero implements IFigura {
 
 	public static final int NUM_LATI = 3;
 	private int lunghezzaLato;

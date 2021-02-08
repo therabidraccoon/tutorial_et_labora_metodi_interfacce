@@ -13,6 +13,11 @@ public class Quadrato implements IFigura {
 		return perimetro;
 	}
 	
+	public double calcolaArea() {
+		double area = Math.pow(lunghezzaLato, 2);
+		return area;
+	}
+	
 	public int getLunghezzaLato() {
 		return lunghezzaLato;
 	}

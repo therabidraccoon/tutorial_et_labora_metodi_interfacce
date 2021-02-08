@@ -1,8 +1,9 @@
 package it.etlabora.testjava;
 
 import it.etlabora.testjava.figure.IFigura;
+import it.etlabora.testjava.figure.impl.Cerchio;
 import it.etlabora.testjava.figure.impl.Quadrato;
-import it.etlabora.testjava.figure.impl.Triangolo;
+import it.etlabora.testjava.figure.impl.TriangoloEquilatero;
 import it.etlabora.testjava.utils.FigureFormatter;
 
 public class AppMain {
@@ -15,11 +16,14 @@ public class AppMain {
 		Quadrato altroQuad = new Quadrato();
 		altroQuad.setLunghezzaLato(10);
 		
-		Triangolo t = new Triangolo();
+		TriangoloEquilatero t = new TriangoloEquilatero();
 		t.setLunghezzaLato(3);
 		
-		IFigura figura = new Triangolo();
-		figura.calcolaPerimetro();
+		Cerchio c = new Cerchio();
+		c.setRaggio(5);
+		
+//		IFigura figura = new Triangolo();
+//		figura.calcolaPerimetro();
 		
 //		int perimetroPrimoQuad = q.calcolaPerimetro();
 //		FigureFormatter.descriviPerimetroFigura(perimetroPrimoQuad, q.getLunghezzaLato());
@@ -27,7 +31,7 @@ public class AppMain {
 		
 		FigureFormatter.descriviPerimetroFigura(q);
 		FigureFormatter.descriviPerimetroFigura(t);
-		
+		FigureFormatter.descriviPerimetroFigura(c);
 		
 	}
 
